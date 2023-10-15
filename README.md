@@ -3,7 +3,7 @@
 ## Introduction
 This project provide a sample that shows how to implement an **API Gateway** using Ocelot in .Net 6.  
 I also wrote an article in the following address that completely cover **API Gateway Design Pattern**:  
-
+https://www.linkedin.com/pulse/api-gateways-cnet-amir-doosti/  
 
 ## Structure of soution
 The solution contains one .Net Core API project which is written in Visual Studio. It also contains a help.html file for usage clarification.
