@@ -1,0 +1,43 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/cat",
+      "UpstreamHttpMethod": [ "Get" ],
+
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "catfact.ninja",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/fact"
+    },
+    {
+      "UpstreamPathTemplate": "/api/coindesk",
+      "UpstreamHttpMethod": [ "Get" ],
+
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "api.coindesk.com",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/v1/bpi/currentprice.json"
+    },
+    {
+      "UpstreamPathTemplate": "/api/agify/{firstname}",
+      "UpstreamHttpMethod": [ "Get" ],
+
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "api.agify.io",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/?name={firstname}"
+    }
+  ]
+}
